@@ -15,4 +15,8 @@ int main(void) {
 
     ch++;
     printf("%c\n", ch);
+
+    for (char x = 'A'; x <= 'Z'; x++) {
+        printf("%c", x);
+    }
 }
