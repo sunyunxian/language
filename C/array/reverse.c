@@ -1,4 +1,8 @@
-// Reverse a series of numbers
+/* 
+ * Author: sunyunxian
+ * Purpose: Reverse a series of numbers
+ * Copyright 2023
+ */
 
 #include <stdio.h>
 #define N 5
