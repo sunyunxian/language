@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "stdio.h": "c"
+        "*.excalidraw": "json",
+        "*.excalidrawlib": "json",
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "stdio.h": "c",
+        "limits.h": "c"
     }
 }

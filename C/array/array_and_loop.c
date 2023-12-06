@@ -30,7 +30,7 @@ int main(void)
     }
     printf("Sum = %d\n", sum);
 
-    return 1;
+    return 0;
 }
 
 void read_array_elements(int a[], int length)

@@ -12,5 +12,5 @@ int main(void)
         j = tmp;
     }
     printf("i = %d, j = %d\n", i, j);
-    return 1;
+    return 0;
 }
