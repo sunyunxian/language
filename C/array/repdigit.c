@@ -1,6 +1,6 @@
 // Check numbers for repeated digits
 
-#include <stdbool.h>  // C99 only
+#include <stdbool.h> // C99 only
 #include <stdio.h>
 
 int main(void)

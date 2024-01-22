@@ -1,4 +1,4 @@
-/* 
+/*
  * Author: sunyunxian
  * Purpose: Reverse a series of numbers
  * Copyright 2023
