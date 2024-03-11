@@ -13,12 +13,14 @@ cfile_out=$(echo "${cfile%.*}" | awk -F "/" '{print $NF}')
 
 printf "compile %s to %s/%s\n" "${cfile}" "${build_fn}" "${cfile_out}"
 compiler_cli="gcc -Wall -O -std=c99 -o ${build_fn}/${cfile_out} ${cfile}"
-printf "compil cli: %s\n" "${compiler_cli}"
+printf "compil cli: %s\n\n" "${compiler_cli}"
 
 ${compiler_cli}
 
-printf "run %s/%s\n\n" "${build_fn}" "${cfile_out}"
+printf "run %s/%s\n" "${build_fn}" "${cfile_out}"
+
+printf "* * * * * * * * * * * * * * * * * * * *\n\n"
 
 "./${build_fn}/${cfile_out}"
 
-printf "\n"
+printf "\n* * * * * * * * * * * * * * * * * * * *\n\n"
