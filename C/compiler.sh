@@ -7,20 +7,18 @@
 # check input
 [[ "${1}" ]] && cfile="${1}" || exit 1
 
+all_cfiles="$*"
+
 build_fn="build"
 cfile_out=$(echo "${cfile%.*}" | awk -F "/" '{print $NF}')
 [[ -d "${build_fn}" ]] || mkdir "${build_fn}"
 
 printf "compile %s to %s/%s\n" "${cfile}" "${build_fn}" "${cfile_out}"
-compiler_cli="gcc -Wall -O -std=c99 -o ${build_fn}/${cfile_out} ${cfile}"
+compiler_cli="gcc -Wall -O -std=c99 -o ${build_fn}/${cfile_out} ${all_cfiles}"
 printf "compil cli: %s\n\n" "${compiler_cli}"
 
 ${compiler_cli}
 
 printf "run %s/%s\n" "${build_fn}" "${cfile_out}"
 
-printf "* * * * * * * * * * * * * * * * * * * *\n\n"
-
 "./${build_fn}/${cfile_out}"
-
-printf "\n* * * * * * * * * * * * * * * * * * * *\n\n"
