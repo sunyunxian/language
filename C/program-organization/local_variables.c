@@ -3,8 +3,7 @@
 
 void f(void);
 
-int main(void)
-{
+int main(void) {
     printf("First call f function\n");
     f();
     printf("Second call f function\n");
@@ -12,8 +11,7 @@ int main(void)
     return 0;
 }
 
-void f(void)
-{
+void f(void) {
     int i = 0;
     printf("f function variable i = %d\n", i);
     i += 1;

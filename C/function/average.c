@@ -4,8 +4,7 @@
 
 double average(double a, double b);
 
-int main(void)
-{
+int main(void) {
     double x, y, z;
     printf("Enter three numbers: ");
     scanf("%lf%lf%lf", &x, &y, &z);

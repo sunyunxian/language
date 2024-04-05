@@ -8,8 +8,7 @@ void read_string_by_scanf(void);
 // void read_string_by_gets(void);
 int read_line_by_getchar(char str[], int n);
 
-int main(void)
-{
+int main(void) {
     write_string_by_printf();
     write_string_by_puts();
     read_string_by_scanf();
@@ -19,8 +18,7 @@ int main(void)
     return 1;
 }
 
-void write_string_by_printf(void)
-{
+void write_string_by_printf(void) {
     printf("Read string\n");
     char str[] = "read string by printf";
     printf("%s\n", str);
@@ -30,19 +28,17 @@ void write_string_by_printf(void)
     printf("%-10.6s\n", str);
 }
 
-void write_string_by_puts()
-{
+void write_string_by_puts() {
     char str[] = "read string by puts";
-    puts(str); // puts 自带换行
+    puts(str);  // puts 自带换行
 }
 
-void read_string_by_scanf(void)
-{
-    char sentence[100]; // demo 假设长度是 100
+void read_string_by_scanf(void) {
+    char sentence[100];  // demo 假设长度是 100
     printf("Enter a sentence: \n");
     // To c, or not to c: that is the question.
     scanf("%s", sentence);
-    printf("Your enter: %s", sentence); // 输出结果是To，碰到空格会停止调用
+    printf("Your enter: %s", sentence);  // 输出结果是To，碰到空格会停止调用
 }
 
 // void read_string_by_gets(void)
@@ -55,13 +51,10 @@ void read_string_by_scanf(void)
 //     printf("Your enter: %s", sentence);
 // }
 
-int read_line_by_getchar(char str[], int n)
-{
+int read_line_by_getchar(char str[], int n) {
     int ch, i = 0;
-    while ((ch = getchar()) != '\n')
-    {
-        if (i < n)
-        {
+    while ((ch = getchar()) != '\n') {
+        if (i < n) {
             str[i++] = ch;
         }
     }

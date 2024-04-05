@@ -5,15 +5,13 @@
 void init_string(void);
 void string_diff_array(void);
 
-int main(void)
-{
+int main(void) {
     init_string();
     string_diff_array();
     return 1;
 }
 
-void init_string(void)
-{
+void init_string(void) {
     printf("Init string variable\n");
     // 使用宏定义 string 长度
     char str[STR_LEN + 1];
@@ -32,12 +30,10 @@ void init_string(void)
     printf("%s\n", date3);
 }
 
-void string_diff_array(void)
-{
+void string_diff_array(void) {
     printf("String diff array\n");
     char data[] = "June 14";
-    for (int i = 0; i < (int)(sizeof(data) / sizeof(data[0])); i++)
-    {
+    for (int i = 0; i < (int)(sizeof(data) / sizeof(data[0])); i++) {
         printf("%c\n", data[i]);
     }
     char *p = "June 14";

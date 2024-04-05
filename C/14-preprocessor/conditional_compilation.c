@@ -4,8 +4,7 @@
 #define DEBUG 1
 #define LINUX
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
     int i = 0, j = 1;
 #if DEBUG
     printf("value of i: %d\n", i);

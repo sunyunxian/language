@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     float loan = 0.0f, rate = 0.0f, monthly_pay = 0.0f;
     printf("Enter amount of loan: ");
     scanf("%f", &loan);
@@ -18,5 +17,6 @@ int main(void)
     printf("Balance remaining after second payment: %.2f\n", loan);
     loan = (loan - monthly_pay) + (loan * month_rate);
     printf("Balance remaining after third payment: %.2f\n", loan);
+
     return 0;
 }

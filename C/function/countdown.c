@@ -4,14 +4,9 @@
 
 void print_count(int n);
 
-int main(void)
-{
-    for (int i = 10; i > 0; --i)
-        print_count(i);
+int main(void) {
+    for (int i = 10; i > 0; --i) print_count(i);
     return 0;
 }
 
-void print_count(int n)
-{
-    printf("T minus %d and counting\n", n);
-}
+void print_count(int n) { printf("T minus %d and counting\n", n); }

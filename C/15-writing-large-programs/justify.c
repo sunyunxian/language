@@ -1,30 +1,25 @@
 /* Formats a file of text */
 
+#include <string.h>
 #include "line.h"
 #include "word.h"
-#include <string.h>
 
 #define MAX_WORD_LEN 20
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
     char word[MAX_WORD_LEN + 2];
-    int word_len;
+    int  word_len;
 
     clear_line();
-    for (;;)
-    {
+    for (;;) {
         read_word(word, MAX_WORD_LEN + 1);
         word_len = strlen(word);
-        if (word_len == 0)
-        {
+        if (word_len == 0) {
             flush_line();
             return 0;
         }
-        if (word_len > MAX_WORD_LEN)
-            word[MAX_WORD_LEN] = '*';
-        if (word_len + 1 > space_remaining())
-        {
+        if (word_len > MAX_WORD_LEN) word[MAX_WORD_LEN] = '*';
+        if (word_len + 1 > space_remaining()) {
             write_line();
             clear_line();
         }

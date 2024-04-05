@@ -2,15 +2,13 @@
 
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     int month, day, year;
     printf("Enter date (mm/dd/yy): ");
     scanf("%d /%d /%d", &month, &day, &year);
     printf("Dated this %d", day);
 
-    switch (day)
-    {
+    switch (day) {
         case 1:
         case 21:
         case 31:
@@ -29,8 +27,7 @@ int main(void)
             break;
     }
     printf(" day of ");
-    switch (month)
-    {
+    switch (month) {
         case 1:
             printf("January");
             break;

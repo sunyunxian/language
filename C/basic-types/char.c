@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     char ch;
 
     ch = 'a';
@@ -17,8 +16,7 @@ int main(void)
     ch++;
     printf("%c\n", ch);
 
-    for (char x = 'A'; x <= 'Z'; x++)
-    {
+    for (char x = 'A'; x <= 'Z'; x++) {
         printf("%c", x);
     }
 }

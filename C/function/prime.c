@@ -5,8 +5,7 @@
 
 bool is_prime(int n);
 
-int main(void)
-{
+int main(void) {
     int n;
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -17,13 +16,10 @@ int main(void)
     return 0;
 }
 
-bool is_prime(int n)
-{
+bool is_prime(int n) {
     bool is_prime = true;
-    for (int i = 2; i < n; i++)
-    {
-        if ((n % i) == 0)
-        {
+    for (int i = 2; i < n; i++) {
+        if ((n % i) == 0) {
             is_prime = false;
             return is_prime;
         }

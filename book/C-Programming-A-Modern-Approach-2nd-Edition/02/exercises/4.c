@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int main(void){
-    int a, b;
+int main(void) {
+    int   a, b;
     float c, d;
 
     printf("a = %d, b = %d\n", a, b);

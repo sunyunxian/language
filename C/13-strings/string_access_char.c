@@ -3,8 +3,7 @@
 int count_space(const char s[]);
 int count_space_by_pointer(const char *s);
 
-int main(void)
-{
+int main(void) {
     char s[] = "Hello World ";
     printf("\"%s\" count space = %d\n", s, count_space(s));
     char *p = "Hello World ";
@@ -12,26 +11,20 @@ int main(void)
     return 1;
 }
 
-int count_space(const char s[])
-{
+int count_space(const char s[]) {
     int count = 0;
-    for (int i = 0; s[i] != '\0'; i++)
-    {
-        if (s[i] == ' ')
-        {
+    for (int i = 0; s[i] != '\0'; i++) {
+        if (s[i] == ' ') {
             count++;
         }
     }
     return count;
 }
 
-int count_space_by_pointer(const char *s)
-{
+int count_space_by_pointer(const char *s) {
     int count = 0;
-    for (; *s != '\0'; s++)
-    {
-        if (*s == ' ')
-        {
+    for (; *s != '\0'; s++) {
+        if (*s == ' ') {
             count++;
         }
     }

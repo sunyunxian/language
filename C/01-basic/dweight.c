@@ -4,8 +4,7 @@
 
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     int height = 8, length = 12, width = 10, volume, weight;
 
     volume = height * length * width;

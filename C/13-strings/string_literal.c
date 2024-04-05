@@ -5,8 +5,7 @@ void string_splicing(void);
 void string_index(void);
 char digit_to_hex_char(int digit);
 
-int main(void)
-{
+int main(void) {
     string_escape();
     string_splicing();
     string_index();
@@ -15,26 +14,26 @@ int main(void)
     return 0;
 }
 
-void string_escape(void)
-{
+void string_escape(void) {
     printf("String escape\n");
     char *string_escape = "Candy\nIs dandy\nBut liquor\nIs quicker.\n  --Ogden Nash\n";
     printf("%s\n", string_escape);
 }
 
-void string_splicing(void)
-{
+void string_splicing(void) {
     printf("String splicing\n");
-    printf("When you come to a fork in the road, take it.   \
+    printf(
+        "When you come to a fork in the road, take it.   \
     --Yogi Berra\n");
-    printf("When you come to a fork in the road, take it. "
-           "--Yogi Berra\n");
-    printf("When you come to a fork in the road, take it.   "
-           "--Yogi Berra");
+    printf(
+        "When you come to a fork in the road, take it. "
+        "--Yogi Berra\n");
+    printf(
+        "When you come to a fork in the road, take it.   "
+        "--Yogi Berra");
 }
 
-void string_index(void)
-{
+void string_index(void) {
     printf("String index\n");
     char *p;
     p = "abc";
@@ -44,7 +43,4 @@ void string_index(void)
     printf("%c\n", c);
 }
 
-char digit_to_hex_char(int digit)
-{
-    return "0123456789ABCDEF"[digit];
-}
+char digit_to_hex_char(int digit) { return "0123456789ABCDEF"[digit]; }

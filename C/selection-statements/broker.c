@@ -2,8 +2,7 @@
 
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     float commission, value;
     printf("Enter value of trade: ");
     scanf("%f", &value);
