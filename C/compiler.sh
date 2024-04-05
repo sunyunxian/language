@@ -14,7 +14,7 @@ cfile_out=$(echo "${cfile%.*}" | awk -F "/" '{print $NF}')
 [[ -d "${build_fn}" ]] || mkdir "${build_fn}"
 
 printf "compile %s to %s/%s\n" "${cfile}" "${build_fn}" "${cfile_out}"
-compiler_cli="gcc -Wall -O -std=c99 -o ${build_fn}/${cfile_out} ${all_cfiles}"
+compiler_cli="gcc ${all_cfiles} -o ${build_fn}/${cfile_out} -Wall -w -pedantic -std=c99"
 printf "compil cli: %s\n\n" "${compiler_cli}"
 
 ${compiler_cli}
