@@ -2,6 +2,7 @@
 
 int main(void) {
     int i, j, k, x, y;
+
     printf("Enter ISBN: ");
 
     scanf("%d-%d-%d-%d-%d", &i, &j, &k, &x, &y);
